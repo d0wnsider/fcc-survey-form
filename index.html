@@ -2,111 +2,167 @@
 <html lang="en">
 
 <head>
-	<title>Survey Form</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anime Survey Form</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h1 id="title">d0wnsider Survey Form</h1>
-	<p id="description">Thank you for your time to help us improve the platform</p>
+	<div class="content">
+		<header>
+			<h1 id="title">Anime Survey Form</h1>
+			<p id="description">Survey to see how many anime watchers out there! </p>
+		</header>
 
-	<form action="#" method="post" id="survey-form">
-		<label for="name" id="name-label">Name</label>
-		<p>
-			<input type="text" id="name" placeholder="Enter your name" required>
-		</p>
+		<main>
+			<form action="#" method="post" id="survey-form">
+				<fieldset class="box1">
+					<legend>Personal Information</legend>
+					<label for="name" id="name-label">Name</label>
+					<p>
+						<input type="text" id="name" placeholder="Enter your name" required>
+					</p>
 
-		<label for="email" id="email-label">Email</label>
-		</p>
-		<input type="email" id="email" placeholder="Enter your Email " required>
-		</p>
+					<label for="email" id="email-label">Email</label>
+					</p>
+					<input type="email" id="email" placeholder="Enter your Email " required>
+					</p>
 
-		<label for="number" id="number-label">Age (optional)</label>
-		</p>
-		<input type="number" id="number" placeholder="Age" min="12" max="100">
-		</p>
+					<label for="number" id="number-label">Age (optional)</label>
+					</p>
+					<input type="number" id="number" placeholder="Age" min="6" max="100">
+					</p>
+				</fieldset>
 
-		<label for="dropdown">Which option best describes your current role?</label>
-		<p>
-			<select name="role" id="dropdown">
-				<option value="">Select an option</option>
-				<option value="student">Student</option>
-				<option value="job">Full Time Job</option>
-				<option value="learner">Full Time Learner</option>
-				<option value="nottosay">Prefer not to say</option>
-				<option value="other">Other</option>
-			</select>
-		</p>
+				<fieldset class="box2">
+					<legend>What is your favorite anime genre?</legend>
+					<ul>
+						<li>
+							<input type="checkbox" id="action" value="action" />
+							<label for="action">Action</label>
+						<li>
+							<input type="checkbox" id="adventure" value="adventure">
+							<label for="adventure">Adventure</label>
+						</li>
+						<li>
+							<input type="checkbox" id="comedy" value="comedy">
+							<label for="comedy">Comedy</label>
+						</li>
+						<li>
+							<input type="checkbox" id="drama" value="drama">
+							<label for="drama">Drama</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ecchi" value="ecchi">
+							<label for="ecchi">Ecchi</label>
+						</li>
+						<li>
+							<input type="checkbox" id="fantasy" value="fantasy">
+							<label for="fantasy">Fantasy</label>
+						</li>
+						<li>
+							<input type="checkbox" id="horror" value="horror">
+							<label for="horror">Horror</label>
+						</li>
+						<li>
+							<input type="checkbox" id="hentai" value="hentai">
+							<label for="hentai">Hentai</label>
+						</li>
+						<li>
+							<input type="checkbox" id="mahoushojo" value="mahoushojo">
+							<label for="mahoushojo">Mahou Shoujo</label>
+						</li>
+						<li>
+							<input type="checkbox" id="mecha" value="mecha">
+							<label for="mecha">Mecha</label>
+						</li>
+						<li>
+							<input type="checkbox" id="music" value="music">
+							<label for="music">Music</label>
+						</li>
+						<li>
+							<input type="checkbox" id="mystery" value="mystery">
+							<label for="mystery">Mystery</label>
+						</li>
+						<li>
+							<input type="checkbox" id="psychological" value="psychological">
+							<label for="psychological">Psychological</label>
+						</li>
+						<li>
+							<input type="checkbox" id="romance" value="romance">
+							<label for="romance">Romance</label>
+						</li>
+						<li>
+							<input type="checkbox" id="scifi" value="scifi">
+							<label for="scifi">Sci-Fi</label>
+						</li>
+						<li>
+							<input type="checkbox" id="sliceoflife" value="sliceoflife">
+							<label for="sliceoflife">Slice of Life</label>
+						</li>
+						<li>
+							<input type="checkbox" id="sports" value="sports">
+							<label for="sports">Sports</label>
+						</li>
+						<li>
+							<input type="checkbox" id="supernatural" value="supernatural">
+							<label for="supernatural">Supernatural</label>
+						</li>
+						<li>
+							<input type="checkbox" id="thriller" value="thriller">
+							<label for="thriller">Thriller</label>
+						</li>
+					</ul>
+				</fieldset>
 
-		<p>Would you recommend freeCodeCamp to a friend?</p>
-		<p>
-			<input type="radio" id="definitely" name="recommend" value="definitely">
-			<label for="definitely">Definitely</label>
-		</p>
-		<p>
-			<input type="radio" id="maybe" name="recommend" value="maybe">
-			<label for="maybe">Maybe</label>
-		</p>
-		<p>
-			<input type="radio" id="not-sure" name="recommend" value="notsure">
-			<label for="not-sure">Not sure</label>
-		</p>
+				<fieldset class="box3">
+					<div class="site">
+						<label for="dropdown">Where do you watch anime?</label>
+						<select name="role" id="dropdown">
+							<option value="">Select an option</option>
+							<option value="nineanime">9anime</option>
+							<option value="crunchyroll">Crunchroll</option>
+							<option value="marinmoe">Marin.moe</option>
+							<option value="netflix">Netflix</option>
+							<option value="kissanime">KissAnime</option>
+						</select>
+					</div>
 
-		<fieldset>
-			<legend>What would you like to see improved? (Check all that apply)</legend>
-			<ul>
-				<li>
-					<input type="checkbox" id="frontend" value="frontend" />
-					<label for="frontend">Front-end Projects</label>
-				<li>
-					<input type="checkbox" id="backend" value="backend">
-					<label for="backend">Back-end Projects</label>
-				</li>
-				<li>
-					<input type="checkbox" id="data" value="datavisualization">
-					<label for="data">Data Visualization</label>
-				</li>
-				<li>
-					<input type="checkbox" id="challenges" value="challenges">
-					<label for="challenges">Challenges</label>
-				</li>
-				<li>
-					<input type="checkbox" id="opensource" value="opensourcecommunity">
-					<label for="opensource">Open Source Community</label>
-				</li>
-				<li>
-					<input type="checkbox" id="gitter" value="gitterhelprooms">
-					<label for="gitter">Gitter help rooms</label>
-				</li>
-				<li>
-					<input type="checkbox" id="videos" value="videos">
-					<label for="videos">Videos</label>
-				</li>
-				<li>
-					<input type="checkbox" id="city" value="city meetups">
-					<label for="city">City Meetups</label>
-				</li>
-				<li>
-					<input type="checkbox" id="wiki" value="wiki">
-					<label for="wiki">Wiki</label>
-				</li>
-				<li>
-					<input type="checkbox" id="forum" value="forum">
-					<label for="forum">Forum</label>
-				</li>
-				<li>
-					<input type="checkbox" id="add-courses" value="additionalcourses">
-					<label for="add-courses">Additional Courses</label>
-				</li>
-			</ul>
-		</fieldset>
-		<br>
-		<label for="textarea">Any comments or suggestions?</label>
-		<p>
-			<textarea id="textarea" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
-		</p>
-		<button type="submit" form="survey-form" id="submit">Submit</button>
-	</form>
+					<div class="hours">
+						<label for="dropdown">How do you watch your anime?</label>
+						<select name="role" id="dropdown">
+							<option value="">Select an option</option>
+							<option value="subbed">Subbed</option>
+							<option value="dubbed">Dubbed</option>
+							<option value="original">Original</option>
+						</select>
+					</div>
+
+					<p>Do you read manga?</p>
+					<div class="manga">
+						<input type="radio" id="yes" name="manga" value="yes">
+						<label for="yes">Yes</label>
+
+						<input type="radio" id="maybe" name="manga" value="sometimes">
+						<label for="sometimes">Sometimes</label>
+
+						<input type="radio" id="not-sure" name="manga" value="no">
+						<label for="no">No</label>
+					</div>
+
+					<label for="textarea">What is your favorite anime? and why?</label>
+					<p>
+						<textarea id="textarea" rows="5" cols="50" placeholder="Enter your story here..."></textarea>
+					</p>
+				</fieldset>
+				<div class="btn">
+					<button type="submit" form="survey-form" id="submit">Submit</button>
+				</div>
+			</form>
+		</main>
+	</div>
 </body>
 
 </html>

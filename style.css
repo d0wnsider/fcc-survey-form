@@ -1,4 +1,70 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 html {
   height: 100%;
   width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	text-align: center;
+}
+
+header, main {
+	padding: 20px 0;
+}
+
+.box1, .box2 , .box3 {
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.box1 {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+
+legend {
+	margin: auto;
+}
+
+.box2 {
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	list-style: none;
+}
+
+.box3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.site, .hours {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
