@@ -7,13 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anime Survey Form</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="content">
 		<header>
-			<h1 id="title">Anime Survey Form</h1>
-			<p id="description">Survey to see how many anime watchers out there! </p>
+			<h1>Anime Survey Form</h1>
+			<p class="description">Survey to see how many anime watchers out there! </p>
 		</header>
 
 		<main>
@@ -21,23 +24,18 @@
 				<fieldset class="box1">
 					<legend>Personal Information</legend>
 					<label for="name" id="name-label">Name</label>
-					<p>
-						<input type="text" id="name" placeholder="Enter your name" required>
-					</p>
+					<input type="text" id="name" placeholder="Enter your name" required>
 
 					<label for="email" id="email-label">Email</label>
-					</p>
 					<input type="email" id="email" placeholder="Enter your Email " required>
-					</p>
 
 					<label for="number" id="number-label">Age (optional)</label>
-					</p>
 					<input type="number" id="number" placeholder="Age" min="6" max="100">
-					</p>
 				</fieldset>
 
 				<fieldset class="box2">
-					<legend>What is your favorite anime genre?</legend>
+					<legend>Anime</legend>
+					<p class="title">What is your favorite anime genre?</p>
 					<ul>
 						<li>
 							<input type="checkbox" id="action" value="action" />
@@ -115,11 +113,9 @@
 							<label for="thriller">Thriller</label>
 						</li>
 					</ul>
-				</fieldset>
 
-				<fieldset class="box3">
 					<div class="site">
-						<label for="dropdown">Where do you watch anime?</label>
+						<label for="dropdown" class="title">Where do you watch anime?</label>
 						<select name="role" id="dropdown">
 							<option value="">Select an option</option>
 							<option value="nineanime">9anime</option>
@@ -131,7 +127,7 @@
 					</div>
 
 					<div class="hours">
-						<label for="dropdown">How do you watch your anime?</label>
+						<label for="dropdown" class="title">How do you watch your anime?</label>
 						<select name="role" id="dropdown">
 							<option value="">Select an option</option>
 							<option value="subbed">Subbed</option>
@@ -140,8 +136,14 @@
 						</select>
 					</div>
 
-					<p>Do you read manga?</p>
+					<label for="textarea" class="title">What is your favorite anime? and why?</label>
+					<textarea id="textarea" rows="5" cols="50" placeholder="Enter your story here..."></textarea>
+				</fieldset>
+
+				<fieldset class="box3">
+					<legend>Manga</legend>
 					<div class="manga">
+						<p class="title">Do you read manga?</p>
 						<input type="radio" id="yes" name="manga" value="yes">
 						<label for="yes">Yes</label>
 
@@ -152,10 +154,8 @@
 						<label for="no">No</label>
 					</div>
 
-					<label for="textarea">What is your favorite anime? and why?</label>
-					<p>
-						<textarea id="textarea" rows="5" cols="50" placeholder="Enter your story here..."></textarea>
-					</p>
+					<label for="textarea" class="title">What is your favorite manga? and why?</label>
+					<textarea id="textarea" rows="5" cols="50" placeholder="Enter your story here..."></textarea>
 				</fieldset>
 				<div class="btn">
 					<button type="submit" form="survey-form" id="submit">Submit</button>
